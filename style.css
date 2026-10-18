@@ -1,0 +1,257 @@
+:root {
+  --color1: rgb(79, 185, 226);
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.first {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  border-bottom: 1px solid grey;
+}
+.first img {
+  height: 100vh;
+  width: 100%;
+}
+.left-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-first-container {
+  width: 80%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+}
+.left-first-container p {
+  margin: 50px 0;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+.left-first-container button {
+  background-color: transparent;
+  width: 20%;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.left-first-container button:hover {
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  transition: 0.5s;
+}
+.second {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 400px;
+  border-bottom: 1px solid grey;
+}
+.second img {
+  height: 400px;
+  width: 100%;
+}
+.second-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second-right-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.second-right-container p {
+  margin: 50px 0;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+.second-right-container button {
+  background-color: transparent;
+  width: 20%;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.second-right-container button:hover {
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  transition: 0.5s;
+}
+.third {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 450px;
+  border-bottom: 1px solid grey;
+}
+.third img {
+  height: 450px;
+  width: 100%;
+}
+.third-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.third-left-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.third-left-container p {
+  margin: 50px 0;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+.third-left-container button {
+  background-color: transparent;
+  width: 20%;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.third-left-container button:hover {
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  transition: 0.5s;
+}
+h4 {
+  text-align: center;
+  padding: 100px 0 50px;
+  text-transform: uppercase;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "na em"
+    "tx tx"
+    "btn btn";
+  gap: 50px;
+}
+.nom {
+  grid-area: na;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+.mail {
+  grid-area: em;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+.text {
+  grid-area: tx;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+#send {
+  grid-area: btn;
+}
+.forth {
+  height: 850px;
+  border-bottom: 1px solid grey;
+}
+.forth-down-container {
+  width: 800px;
+  margin: 0 auto;
+  height: 800px;
+}
+input {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+#send {
+  background-color: transparent;
+  width: 30%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#send:hover {
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  transition: 0.5s;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto;
+}
+.icons i {
+  border: 1px solid gray;
+  display: inline-flex; /* crucial! */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  font-size: 25px;
+  margin: 20px;
+  cursor: pointer;
+  width: 50px;
+}
+.icons i:hover {
+  color: var(--color1); /* change icon color */
+  border-color: var(--color1); /* optional: match border color */
+  transition: 0.3s ease; /* smooth effect */
+}
+@media screen and (max-width: 650px) {
+  .first,
+  .second,
+  .third {
+    display: block;
+    height: 100vh;
+  }
+  .first img {
+    height: 70vh;
+    margin-top: 50px;
+  }
+  .left-first-container button {
+    width: 35%;
+  }
+}
